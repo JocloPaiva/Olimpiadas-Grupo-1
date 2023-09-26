@@ -1,0 +1,130 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/Assets/img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 420px;
+    height: 650px;
+    background: white;
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+}
+
+.head{
+    width: 420px;
+    height: 50px;
+    background-color: rgb(20, 18, 139);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head a{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head a:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.body{
+    width: 420px;
+    height: 550px;
+    background: transparent;
+    backdrop-filter: blur(9px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    width: 420px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+.navbar .menu{
+    width: 140px;
+    height: 60px;
+    background-color: rgb(18, 17, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(18, 17, 114);
+}
+.navbar .menu a{
+    font-size: 20px;
+    height: 60px;
+    width: 140px;
+    text-decoration: none;
+    text-align: center;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+.menu a:hover{
+	background: white;
+    color: rgb(18, 17, 114);
+}
+.wrapper .body .sexo{
+    font-size: 24px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto; color: black;
+}
+.btn {
+
+    background: #0509f3;
+    background-image: -webkit-linear-gradient(top, #0509f3, #2079b0);
+    background-image: -moz-linear-gradient(top, #0509f3, #2079b0);
+    background-image: -ms-linear-gradient(top, #0509f3, #2079b0);
+    background-image: -o-linear-gradient(top, #0509f3, #2079b0);
+    background-image: linear-gradient(to bottom, #0509f3, #2079b0);
+
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    
+    text-shadow: 3px 2px 1px #9daef5;
+    -webkit-box-shadow: 6px 5px 24px #666666;
+    -moz-box-shadow: 6px 5px 24px #666666;
+    box-shadow: 6px 5px 24px #666666;
+    
+    font-family: Arial;
+    color: #000000;
+    font-size: 47px;
+    padding: 19px;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #2079b0;
+    
+    background-image: -webkit-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -moz-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -ms-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: -o-linear-gradient(top, #2079b0, #eb94d0);
+    background-image: linear-gradient(to bottom, #2079b0, #eb94d0);
+    
+    text-decoration: none;
+}

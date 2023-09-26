@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión y Reportes</title>
+    <link rel="stylesheet" href="css/registropaciente.css"> <!-- Enlace a tu archivo CSS para el estilo -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+        <script>
+    $('.phone_with_ddd').mask('+(00) 000-0000000');
+</script>
+</head>
+<body>
+    <header>
+        <h1>SISTEMA DE GESTIÓN Y REPORTES ESTADÍSTICOS</h1>
+    </header>
+    
+    <nav>
+        <!-- Aquí puedes agregar enlaces de navegación si es necesario -->
+    </nav>
+    
+    <main>
+        <h1>Ficha de pacientes</h1>
+        <form action="registropaciente.php" method="post"> <!-- El atributo "action" debe apuntar a un script del lado del servidor para procesar los datos -->
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" required><br>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+
+            <label>Género:</label><br><br>
+            <div style=" display: flex; justify-content: center;  align-items: center;">
+            <label for="generoMasculino">Masculino</label>
+            <input type="radio" id="generoMasculino" name="genero" value="Masculino" required>
+                    </div>
+             <div style=" display: flex; justify-content: center; align-items: center;">       
+            <label for="generoFemenino">Femenino</label>
+            <input type="radio" id="generoFemenino" name="genero" value="Femenino" required>
+             </div><br>
+
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br>
+            
+            <label for="telefono">Teléfono:</label><br>
+            <input type="text" id="telefono" class="phone_with_ddd" name="telefono" required><br>
+
+            <label for="dni">DNI:</label><br>
+            <input type="text" id="dni" name="dni" maxlength="8" required><br>
+
+            <label for="diagnostico">Diagnóstico:</label><br>
+            <input type="text" id="diagnostico" name="diagnostico"><br>
+            
+            <button type="submit">Registrar</button>
+ 
+        
+        </form>
+
+    </main>
+    
+    <footer>
+        <!-- Aquí puedes agregar información de contacto o derechos de autor -->
+    </footer>
+
+    <script src="asd"></script> <!-- Enlace a tu archivo JavaScript para la funcionalidad -->
+</body>
+</html>

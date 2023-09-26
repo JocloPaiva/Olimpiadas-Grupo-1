@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reportes.css">
+    <title>Info - Reportes | Codigo Azul</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="head">
+            <a href="info.html"><img src="Assets/icons/flechatras.png" alt="atras"></a>
+            <h3>Info - Reportes</h3>
+            <a href="index.html"><img src="Assets/icons/cerrarsesion.png" alt="cerrar"></a>
+        </div>
+
+        <div class="body">
+            <div class="body-text">
+                <h1>Titulo Reporte</h1>
+            </div>
+            <div class="body-menu">
+                <h1>Titulo Reporte</h1>
+                <form action="agregarreporte.php" method="post"> <!-- Puedes especificar la acción y el método según tus necesidades -->
+                    <label for="tipo_reporte">Descripcion del Reporte:</label>
+                    <input type="text" id="tipo_reporte" name="tipo_reporte" required><br><br>
+
+                    <label for="contenido_reporte">Contenido del Reporte:</label>
+                    <textarea id="contenido_reporte" name="contenido_reporte" rows="4" cols="50" required></textarea><br><br>
+
+                    <label for="id_area">ID del Área:</label>
+                
+                    <select id="ID_Area" name="ID_Area" class="form-control" required>
+                        <option value="1">Area 1</option>
+                        <option value="2">Área 2</option>
+                        <option value="3">Área 3</option>
+                        <!-- Agrega más opciones según sea necesario -->
+                    </select><br><br>
+
+                    <label for="fecha_creacion">Fecha de Creación del Reporte:</label>
+                    <input type="datetime-local" id="fecha_creacion" name="fecha_creacion" value="<?php echo date('Y-m-d\TH:i'); ?>" required><br><br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="menu">
+                <a href="pagpincipal.html">Inicio</a>
+            </div>
+            <div class="menu">
+                <a href="info.html">Info</a>
+            </div>
+            <div class="menu">
+                <a href="perfil.html">Perfil</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

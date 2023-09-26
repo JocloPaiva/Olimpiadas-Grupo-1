@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/maszonas.css">
+    <title>Info - zonas | Codigo Azul</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="head">
+            <a href="info.html"><img src="Assets/icons/flechatras.png" alt="atras"></a>
+            <h3>Info - Zonas</h3>
+            <a href="index.html"><img src="Assets/icons/cerrarsesion.png" alt="cerrar"></a>
+        </div>
+
+        <div class="body">
+            <div class="body-text">
+                <h1>Agregar zonas</h1>
+            </div>
+            <div class="body-menu">
+                
+                <form class="caja-input" action="agregarzona.php" method="post">
+                    <label for="codigoZona">Codigo zona:</label>
+                    <input type="text" id="codigoZona" name="codigoZona">
+                    <label for="nombreZona">Nombre zona:</label>
+                    <input type="text" id="nombreZona" name="nombreZona"><br><br>
+                    <label for="descripcionCorta">Descripción corta:</label>
+                    <input type="text" id="descripcionCorta" name="descripcionCorta"><br><br>
+                    <button class="btn" type="submit" name="login" value="Enviar">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="menu">
+                <a href="pagpincipal.html">Inicio</a>
+            </div>
+            <div class="menu">
+                <a href="info.html">Info</a>
+            </div>
+            <div class="menu">
+                <a href="perfil.html">Perfil</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

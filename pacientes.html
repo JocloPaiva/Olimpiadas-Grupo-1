@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/nuevopaciente.css">
+    <title>Agregar paciente | Codigo Azul</title>
+
+</head>
+<body>
+    <section class="wrapper">
+        <div class="head">
+            <a href="pagpincipal.html"></a>
+            <h3>Info - Nuevo Paciente</h3>
+            <a href="index.html"><img src="Assets/icons/cerrarsesion.png" alt="cerrar"></a>
+        </div>
+        <div class="body">
+            <h1>Ingrese datos del paciente</h1>
+            <form action="">
+                <div class="caja-input">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="caja-input">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="caja-input">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" maxlength="8" required>
+                </div>
+                <div class="caja-input">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+                <div class="caja-input">
+                    <label for="generoMasculino">Masculino</label>
+                    <input type="radio" id="generoMasculino" name="genero" value="Masculino" required>
+                    <label for="generoFemenino">Femenino</label>
+                    <input type="radio" id="generoFemenino" name="genero" value="Femenino" required>
+                </div>
+                <div class="caja-input">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                </div>
+                <div class="caja-input">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" class="phone_with_ddd" name="telefono" required>
+                </div>
+                <div class="caja-input">
+                    <label for="diagnostico">Diagnóstico:</label>
+                    <input type="text" id="diagnostico" name="diagnostico">
+                </div>
+
+                <button type="submit">Registrar</button>
+                
+            </form>
+            
+        </div>
+        <div class="navbar">
+            <div class="menu">
+                <a href="pagpincipal.html">Inicio</a>
+            </div>
+            <div class="menu">
+                <a href="info.html">Info</a>
+            </div>
+            <div class="menu">
+                <a href="perfil.html">Perfil</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+</body>
+</html>

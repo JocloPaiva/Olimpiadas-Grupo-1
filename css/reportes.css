@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/Assets/img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 420px;
+    height: 650px;
+    background: white;
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+}
+
+.head{
+    width: 420px;
+    height: 50px;
+    background-color: rgb(20, 18, 139);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head a{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head a:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.body{
+    width: 420px;
+    height: 550px;
+    background: transparent;
+    backdrop-filter: blur(9px);
+}
+.body .body-text{
+    width: 420px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.body .body-text h1{
+    color: black;
+    font-size: 35px;
+}
+.body .body-menu{
+    width: 360px;
+    height: 400px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    padding-right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.body .body-menu a{
+    padding-top: 20px;
+}
+.body .body-menu .btn{
+    width: 30%;
+    height: 45px;
+    background: #2522ccab;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.navbar{
+    width: 420px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+.navbar .menu{
+    width: 140px;
+    height: 60px;
+    background-color: rgb(18, 17, 114);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid rgb(18, 17, 114);
+}
+.navbar .menu a{
+    font-size: 20px;
+    height: 60px;
+    width: 140px;
+    text-decoration: none;
+    text-align: center;
+	color: white;
+	padding: 20px;
+	display: block;
+}
+.navbar .menu a:hover{
+	background: white;
+    color: rgb(18, 17, 114);
+}
+.caja-input{
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin: 0px 0;
+    margin-left: 90px;
+}
+label {
+    color: black;
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: black;
+    padding: 0px 0px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
